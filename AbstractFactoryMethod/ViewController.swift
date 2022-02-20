@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var table: Table?
     var sofa: Sofa?
     
+    var furniturearray = [Any]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,26 @@ class ViewController: UIViewController {
         table = KitchenFactory().createTable()
         sofa = KitchenFactory().createSofa()
      //   print(sofa?.type)
+//        chair?.name
+//
+//        if let chairOne = chair {
+//            furniturearray.append(chairOne)
+//        }
+//        if let tableOne = table {
+//            furniturearray.append(tableOne)
+//        }
+//        print(furniturearray[1])
         
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if (segue.identifier == "showFurniture") {
+            let furnitureVC = FurnitureViewController()
+            furnitureVC.chairF = BedroomFactory().createChair()
+            furnitureVC.tableF = table
+            furnitureVC.sofaF = sofa
+            }
+        }
+        
+        performSegue(withIdentifier: "showFurniture", sender: nil)
        
     }
     
@@ -34,7 +55,31 @@ class ViewController: UIViewController {
         chair = BedroomFactory().createChair()
         table = BedroomFactory().createTable()
         sofa = BedroomFactory().createSofa()
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if (segue.identifier == "showFurniture") {
+            let furnitureVC = FurnitureViewController()
+            furnitureVC.chairF = BedroomFactory().createChair()
+            furnitureVC.tableF = table
+            furnitureVC.sofaF = sofa
+            }
+        }
+        
+        performSegue(withIdentifier: "showFurniture", sender: nil)
     }
+    
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "showFurniture") {
+//        let furnitureVC = FurnitureViewController()
+//        furnitureVC.chairF = chair
+//        furnitureVC.tableF = table
+//        furnitureVC.sofaF = sofa
+//        }
+//    }
+    
+    
+    
     
 }
 

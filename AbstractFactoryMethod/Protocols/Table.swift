@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol Table {
+protocol Table: Furniture {
     var name: String {get}
     var type: String {get}
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Sofa {
+protocol Sofa: Furniture {
     var name: String {get}
     var type: String {get}
 }

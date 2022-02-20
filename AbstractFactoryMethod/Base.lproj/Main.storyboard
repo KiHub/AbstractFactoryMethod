@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b1P-S1-1jd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -16,31 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kb7-N1-AVo">
-                                <rect key="frame" x="100" y="144" width="214" height="652"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Kb7-N1-AVo">
+                                <rect key="frame" x="100" y="108" width="214" height="688"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="id8-My-GAe">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="148"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-un-Jhk">
-                                        <rect key="frame" x="0.0" y="168" width="214" height="148"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Kitchen furniture"/>
-                                        <connections>
-                                            <action selector="kitchenButtontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fd-vw-a2T"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-Vb-Tok">
-                                        <rect key="frame" x="0.0" y="336" width="214" height="148"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2X-67-PcW">
-                                        <rect key="frame" x="0.0" y="504" width="214" height="148"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Bedroom furniture"/>
-                                        <connections>
-                                            <action selector="bedroomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BrV-Xn-Mfi"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YbY-0J-tHQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="294"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="id8-My-GAe">
+                                                <rect key="frame" x="0.0" y="0.0" width="214" height="258"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-un-Jhk">
+                                                <rect key="frame" x="0.0" y="263" width="214" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="Zje-58-2SI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Kitchen furniture"/>
+                                                <connections>
+                                                    <action selector="kitchenButtontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fd-vw-a2T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QhV-eH-8kR">
+                                        <rect key="frame" x="0.0" y="394" width="214" height="294"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-Vb-Tok">
+                                                <rect key="frame" x="0.0" y="0.0" width="214" height="258"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2X-67-PcW">
+                                                <rect key="frame" x="0.0" y="263" width="214" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="mqZ-Ps-TnA"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Bedroom furniture"/>
+                                                <connections>
+                                                    <action selector="bedroomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BrV-Xn-Mfi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -48,13 +64,77 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Kb7-N1-AVo" secondAttribute="trailing" constant="100" id="5Ns-oc-dS0"/>
+                            <constraint firstItem="Kb7-N1-AVo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="ATf-vK-hds"/>
                             <constraint firstAttribute="bottom" secondItem="Kb7-N1-AVo" secondAttribute="bottom" constant="100" id="Du1-KF-wZC"/>
                             <constraint firstItem="Kb7-N1-AVo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Ufr-sU-nFN"/>
-                            <constraint firstItem="Kb7-N1-AVo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="a1D-Qb-3AX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="a7L-Z0-AjM"/>
+                    <connections>
+                        <segue destination="1tl-00-oCg" kind="show" identifier="showFurniture" id="HkC-2P-Kex"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
+        </scene>
+        <!--Furniture View Controller-->
+        <scene sceneID="RFn-6D-bIj">
+            <objects>
+                <viewController id="1tl-00-oCg" customClass="FurnitureViewController" customModule="AbstractFactoryMethod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9Z-VW-Gvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sbR-fY-Sx0">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="zsk-Ty-Kyv">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zsk-Ty-Kyv" id="DbV-BA-7in">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1tl-00-oCg" id="e4h-aJ-ABV"/>
+                                    <outlet property="delegate" destination="1tl-00-oCg" id="1Wx-ur-UaR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZxG-kI-l2h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sbR-fY-Sx0" firstAttribute="top" secondItem="ZxG-kI-l2h" secondAttribute="top" id="4N9-go-VcB"/>
+                            <constraint firstItem="sbR-fY-Sx0" firstAttribute="bottom" secondItem="ZxG-kI-l2h" secondAttribute="bottom" id="9kd-SK-7k4"/>
+                            <constraint firstItem="ZxG-kI-l2h" firstAttribute="trailing" secondItem="sbR-fY-Sx0" secondAttribute="trailing" constant="20" id="Qpc-yb-WxL"/>
+                            <constraint firstItem="sbR-fY-Sx0" firstAttribute="leading" secondItem="ZxG-kI-l2h" secondAttribute="leading" constant="20" id="kpU-iZ-d7a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eC7-b0-5cl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gj3-rO-5YG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.7391304347827" y="94.419642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G2u-02-vnA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b1P-S1-1jd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PcY-Dl-Arr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hiA-H4-JWS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csI-cc-Wih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>

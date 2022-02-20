@@ -28,6 +28,8 @@
 		0BF8743D27C1A1C10024AD00 /* AbstarctFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8743C27C1A1C00024AD00 /* AbstarctFactory.swift */; };
 		0BF8743F27C1A3040024AD00 /* BedroomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8743E27C1A3040024AD00 /* BedroomFactory.swift */; };
 		0BF8744127C1A4480024AD00 /* KitchenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8744027C1A4470024AD00 /* KitchenFactory.swift */; };
+		0BF8744327C2DBB70024AD00 /* Furniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8744227C2DBB60024AD00 /* Furniture.swift */; };
+		0BF8744527C2EF6B0024AD00 /* FurnitureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8744427C2EF6B0024AD00 /* FurnitureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		0BF8743C27C1A1C00024AD00 /* AbstarctFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstarctFactory.swift; sourceTree = "<group>"; };
 		0BF8743E27C1A3040024AD00 /* BedroomFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomFactory.swift; sourceTree = "<group>"; };
 		0BF8744027C1A4470024AD00 /* KitchenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenFactory.swift; sourceTree = "<group>"; };
+		0BF8744227C2DBB60024AD00 /* Furniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture.swift; sourceTree = "<group>"; };
+		0BF8744427C2EF6B0024AD00 /* FurnitureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 				0BF873F627C176E80024AD00 /* AppDelegate.swift */,
 				0BF873F827C176E80024AD00 /* SceneDelegate.swift */,
 				0BF873FA27C176E80024AD00 /* ViewController.swift */,
+				0BF8744427C2EF6B0024AD00 /* FurnitureViewController.swift */,
 				0BF8742B27C19DFE0024AD00 /* KitchenFurniture */,
 				0BF8742A27C19DF00024AD00 /* BedroomFurniture */,
 				0BF8742927C19DD80024AD00 /* AbstractFactory */,
@@ -161,6 +166,7 @@
 				0BF8742627C19DA70024AD00 /* Chair.swift */,
 				0BF8742C27C19F090024AD00 /* Sofa.swift */,
 				0BF8742E27C19F200024AD00 /* Table.swift */,
+				0BF8744227C2DBB60024AD00 /* Furniture.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			files = (
 				0BF8743927C1A0D70024AD00 /* TableKitchen.swift in Sources */,
 				0BF8742F27C19F200024AD00 /* Table.swift in Sources */,
+				0BF8744527C2EF6B0024AD00 /* FurnitureViewController.swift in Sources */,
 				0BF8743127C19F6C0024AD00 /* ChairBedroom.swift in Sources */,
 				0BF8743F27C1A3040024AD00 /* BedroomFactory.swift in Sources */,
 				0BF8743D27C1A1C10024AD00 /* AbstarctFactory.swift in Sources */,
@@ -340,6 +347,7 @@
 				0BF8743327C19FD70024AD00 /* CoffeeTabbleBedroom.swift in Sources */,
 				0BF8744127C1A4480024AD00 /* KitchenFactory.swift in Sources */,
 				0BF8743727C1A0C60024AD00 /* ChairKitchen.swift in Sources */,
+				0BF8744327C2DBB70024AD00 /* Furniture.swift in Sources */,
 				0BF8742D27C19F090024AD00 /* Sofa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
